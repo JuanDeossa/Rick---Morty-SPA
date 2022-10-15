@@ -22,7 +22,7 @@ module.exports={
     },
     module:{
         rules:[
-            //Babel 
+            //Babel
             {
                 test:/\.m?js$/,
                 exclude:/node_modules/,
