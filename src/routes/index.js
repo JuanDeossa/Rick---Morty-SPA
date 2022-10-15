@@ -17,7 +17,8 @@ const router= async ()=>{
     const headerSelector = document.getElementById("header") //null pending
     const contentSelector = document.getElementById("content") //null pending
     headerSelector.innerHTML= await header()
-    console.log(getHash())
+    let hash = await getHash()
+    console.log(hash)
 }
 
 export default router;
