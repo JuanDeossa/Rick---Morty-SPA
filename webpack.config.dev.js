@@ -8,6 +8,7 @@ module.exports={
         filename:"./main.js",
         clean:true
     },
+    mode:"development",
     // devtool:"source-map",
     resolve:{
         extensions:[".js"],
@@ -38,4 +39,11 @@ module.exports={
             filename:"./index.html"
         })
     ],
+    devServer:{
+        static: path.join(__dirname, 'dist'),
+		compress: true,
+		historyApiFallback: true,
+		port: 8080,
+		open: true,
+    }
 }
