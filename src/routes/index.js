@@ -20,11 +20,8 @@ const router= async ()=>{
     const contentSelector = document.getElementById("content") //null pending
     headerSelector.innerHTML= await header()
     let hash = await getHash()
-    console.log(hash)
     let route = await resolveRoutes(hash)
-    console.log(route);
     let render = routes[route]?routes[route]:error404
-    console.log(render);
     contentSelector.innerHTML= await render()
 }
 
