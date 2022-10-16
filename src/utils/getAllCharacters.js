@@ -1,4 +1,4 @@
-const getData=async()=>{
+const getAllCharacters=async()=>{
     const API = "https://rickandmortyapi.com/api/character"
     try {
         const response = await fetch(API)
@@ -9,4 +9,4 @@ const getData=async()=>{
     }
 }
 
-export default getData
+export default getAllCharacters

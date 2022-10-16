@@ -1,4 +1,7 @@
-const character = ()=>{
+import getHash from "@utils/getHash";
+
+const character = async()=>{
+    const id = getHash()
     const view =/*html*/`
         <div class="characters-inner">
             <article class="characters-card">
