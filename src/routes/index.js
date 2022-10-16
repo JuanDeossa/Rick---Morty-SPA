@@ -25,6 +25,7 @@ const router= async ()=>{
     console.log(route);
     let render = routes[route]?routes[route]:error404
     console.log(render);
+    contentSelector.innerHTML= await render()
 }
 
 export default router;
